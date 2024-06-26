@@ -90,6 +90,26 @@
       "path": "root/cloud.TestRunner",
       "addr": "c8647dd8d2adabe83cc081ebe0ccbefe4a068ef3bf"
     },
+    "root/env0/Website": {
+      "type": "@winglang/sdk.cloud.Website",
+      "props": {
+        "staticFilesPath": "C:\\Users\\WIN10\\Desktop\\FeverTokens - internship\\winglang\\winglang demo\\public",
+        "fileRoutes": {}
+      },
+      "path": "root/env0/Website",
+      "addr": "c8553503b9b21385ba08aa16b532d85ad3af775f46"
+    },
+    "root/env0/Website/Endpoint": {
+      "type": "@winglang/sdk.cloud.Endpoint",
+      "props": {
+        "inputUrl": "${wsim#root/env0/Website#attrs.url}",
+        "url": "${wsim#root/env0/Website#attrs.url}",
+        "label": "Website root/env0/Website",
+        "browserSupport": true
+      },
+      "path": "root/env0/Website/Endpoint",
+      "addr": "c8d2f899f3bbe6c6d57ab1ec8e3b8305557b4b25f6"
+    },
     "root/env0/Api/Endpoint": {
       "type": "@winglang/sdk.cloud.Endpoint",
       "props": {

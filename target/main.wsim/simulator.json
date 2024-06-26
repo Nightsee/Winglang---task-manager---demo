@@ -82,6 +82,26 @@
     }
   },
   "resources": {
+    "root/Default/Website": {
+      "type": "@winglang/sdk.cloud.Website",
+      "props": {
+        "staticFilesPath": "C:\\Users\\WIN10\\Desktop\\FeverTokens - internship\\winglang\\winglang demo\\public",
+        "fileRoutes": {}
+      },
+      "path": "root/Default/Website",
+      "addr": "c8a5404e48dacc12afd817f098155c2ca2c322d61f"
+    },
+    "root/Default/Website/Endpoint": {
+      "type": "@winglang/sdk.cloud.Endpoint",
+      "props": {
+        "inputUrl": "${wsim#root/Default/Website#attrs.url}",
+        "url": "${wsim#root/Default/Website#attrs.url}",
+        "label": "Website root/Default/Website",
+        "browserSupport": true
+      },
+      "path": "root/Default/Website/Endpoint",
+      "addr": "c870c9a11109bc1c6ed76992cd0dd9958bc953d73a"
+    },
     "root/Default/Api/Endpoint": {
       "type": "@winglang/sdk.cloud.Endpoint",
       "props": {

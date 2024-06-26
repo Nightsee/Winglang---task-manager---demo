@@ -8,6 +8,32 @@
         "id": "Default",
         "path": "root/Default",
         "children": {
+          "Website": {
+            "id": "Website",
+            "path": "root/Default/Website",
+            "children": {
+              "Endpoint": {
+                "id": "Endpoint",
+                "path": "root/Default/Website/Endpoint",
+                "constructInfo": {
+                  "fqn": "@winglang/sdk.cloud.Endpoint",
+                  "version": "0.0.0"
+                },
+                "display": {
+                  "title": "Endpoint",
+                  "description": "Website root/Default/Website"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@winglang/sdk.cloud.Website",
+              "version": "0.0.0"
+            },
+            "display": {
+              "title": "Website",
+              "description": "A static website"
+            }
+          },
           "Api": {
             "id": "Api",
             "path": "root/Default/Api",

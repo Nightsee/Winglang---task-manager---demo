@@ -21,6 +21,32 @@
         "id": "env0",
         "path": "root/env0",
         "children": {
+          "Website": {
+            "id": "Website",
+            "path": "root/env0/Website",
+            "children": {
+              "Endpoint": {
+                "id": "Endpoint",
+                "path": "root/env0/Website/Endpoint",
+                "constructInfo": {
+                  "fqn": "@winglang/sdk.cloud.Endpoint",
+                  "version": "0.0.0"
+                },
+                "display": {
+                  "title": "Endpoint",
+                  "description": "Website root/env0/Website"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@winglang/sdk.cloud.Website",
+              "version": "0.0.0"
+            },
+            "display": {
+              "title": "Website",
+              "description": "A static website"
+            }
+          },
           "Api": {
             "id": "Api",
             "path": "root/env0/Api",

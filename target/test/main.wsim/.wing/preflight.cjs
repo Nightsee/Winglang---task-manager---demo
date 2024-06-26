@@ -192,6 +192,7 @@ class $Root extends $stdlib.std.Resource {
         });
       }
     }
+    const website = this.node.root.new("@winglang/sdk.cloud.Website", cloud.Website, this, "Website", { path: "./public" });
     const api = this.node.root.new("@winglang/sdk.cloud.Api", cloud.Api, this, "Api", ({"cors": true}));
     const counter = this.node.root.new("@winglang/sdk.cloud.Counter", cloud.Counter, this, "Counter");
     const db = this.node.root.new("@winglang/sdk.ex.Table", ex.Table, this, "Table", { name: "tasks", primaryKey: "id", columns: ({["name"]: ex.ColumnType.STRING}) });

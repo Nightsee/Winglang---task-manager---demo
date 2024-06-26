@@ -2,6 +2,8 @@ bring cloud;
 bring expect;
 bring ex;
 
+
+let website = new cloud.Website(path: "./public");
 let api = new cloud.Api({cors: true});
 let counter = new cloud.Counter();
 let db = new ex.Table(

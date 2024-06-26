@@ -1,3 +1,5 @@
+const PORT = 63530;
+
 let btn = document.querySelector('button');
 let inpt = document.querySelector('input');
 let dataList = document.getElementById('dataList');
@@ -11,7 +13,7 @@ window.onload = function () {
 btn.addEventListener('click', async ()=>{
     let tasktmp = {name: inpt.value}
     inpt.value=""
-    const response = await fetch("http://localhost:63530/add", {
+    const response = await fetch(`http://localhost:${PORT}/add`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -31,7 +33,7 @@ function populatePage(data, id) {
     dataList.appendChild(divtmp)
     // event listener for deleting tasks
     divtmp.addEventListener('click', async ()=>{
-        let response = await fetch(`http://localhost:63530/delete/${divtmp.id}`,{
+        let response = await fetch(`http://localhost:${PORT}/delete/${divtmp.id}`,{
             method: "DELETE",
             headers: {
               "Content-Type": "application/json",
@@ -42,7 +44,7 @@ function populatePage(data, id) {
 }
 
 async function fetchData() {
-    let data = await fetch('http://localhost:63530').then(res=> res.json());
+    let data = await fetch(`http://localhost:${PORT}/`).then(res=> res.json());
     if (dataList.hasChildNodes()) {
         while (dataList.firstChild) {
             dataList.removeChild(dataList.firstChild);

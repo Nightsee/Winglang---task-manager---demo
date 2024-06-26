@@ -1,0 +1,75 @@
+{
+  "version": "connections-0.1",
+  "connections": [
+    {
+      "source": "root/env0/Api",
+      "target": "root/env0/Api/OnRequestHandler0",
+      "name": "get()"
+    },
+    {
+      "source": "root/env0/Api",
+      "target": "root/env0/Api/OnRequestHandler1",
+      "name": "post()"
+    },
+    {
+      "source": "root/env0/Api",
+      "target": "root/env0/Api/OnRequestHandler2",
+      "name": "delete()"
+    },
+    {
+      "source": "root/env0/Api/OnRequestHandler0",
+      "target": "root/env0/$Closure3_0",
+      "name": "handle()"
+    },
+    {
+      "source": "root/env0/Api/OnRequestHandler0",
+      "target": "root/env0/Table",
+      "name": "list()"
+    },
+    {
+      "source": "root/env0/Api/OnRequestHandler1",
+      "target": "root/env0/$Closure4_0",
+      "name": "handle()"
+    },
+    {
+      "source": "root/env0/Api/OnRequestHandler1",
+      "target": "root/env0/Add Task",
+      "name": "invoke()"
+    },
+    {
+      "source": "root/env0/Api/OnRequestHandler2",
+      "target": "root/env0/$Closure5_0",
+      "name": "handle()"
+    },
+    {
+      "source": "root/env0/Api/OnRequestHandler2",
+      "target": "root/env0/Delete Task",
+      "name": "invoke()"
+    },
+    {
+      "source": "root/env0/Add Task",
+      "target": "root/env0/$Closure1_0",
+      "name": "handle()"
+    },
+    {
+      "source": "root/env0/Add Task",
+      "target": "root/env0/Counter",
+      "name": "inc()"
+    },
+    {
+      "source": "root/env0/Add Task",
+      "target": "root/env0/Table",
+      "name": "insert()"
+    },
+    {
+      "source": "root/env0/Delete Task",
+      "target": "root/env0/$Closure2_0",
+      "name": "handle()"
+    },
+    {
+      "source": "root/env0/Delete Task",
+      "target": "root/env0/Table",
+      "name": "delete()"
+    }
+  ]
+}

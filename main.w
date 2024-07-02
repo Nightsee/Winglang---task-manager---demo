@@ -1,3 +1,4 @@
+// version with dynamodb instead of ex.table
 bring cloud;
 bring expect;
 bring ex;

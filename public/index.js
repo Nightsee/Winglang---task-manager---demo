@@ -1,4 +1,4 @@
-const PORT = 63530;
+const PORT = 64315;
 
 let btn = document.querySelector('button');
 let inpt = document.querySelector('input');
@@ -11,7 +11,7 @@ window.onload = function () {
 }
 
 btn.addEventListener('click', async ()=>{
-    let tasktmp = {name: inpt.value}
+    let tasktmp = {task: inpt.value}
     inpt.value=""
     const response = await fetch(`http://localhost:${PORT}/add`, {
         method: "POST",
@@ -50,8 +50,8 @@ async function fetchData() {
             dataList.removeChild(dataList.firstChild);
         }
     }
-    data.forEach(listEl => {
-        console.log(listEl)
-        populatePage(listEl.name, listEl.id)
+    data.tasks.sort((a, b) => Number(a.id) - Number(b.id));
+    data.tasks.forEach(listEl => {
+        populatePage(listEl.task, listEl.id);
     });
 }

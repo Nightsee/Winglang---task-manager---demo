@@ -4,13 +4,15 @@
 
 This is a simple demo app, where you can add by writting the task and clicking on save, or delete the task by clicking on it.
 
+![Capture](https://github.com/Nightsee/Winglang---task-manager---demo/assets/88140911/93673c17-5d12-4d3d-bb62-8065b2902483)
+
 
 ## Ressources
 
 - Api
 - Website
 - Counter
-- Table
+- @winglibs/dynamodb
 
 
 

@@ -48,6 +48,6 @@ Start the server
   wing it
 ```
 
-Update the PORST constant in the ``index.js`` file to match the port of running API.
+Update the PORT constant in the ``index.js`` file to match the port of running API.
 Then, either open the ``index.html`` file in the browser, or open it using the local URL provided in the wing console. 
 

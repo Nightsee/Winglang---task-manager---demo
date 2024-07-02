@@ -10,7 +10,7 @@ This is a simple demo app, where you can add by writting the task and clicking o
 - Api
 - Website
 - Counter
-- Table
+- @winglibs/dynamodb
 
 
 

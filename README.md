@@ -18,7 +18,7 @@ This is a simple demo app, where you can add by writting the task and clicking o
 
 ## Run Locally
 
-Install winglang if not already
+Install winglang if not already and make sur you have docker client running on your machine
 
 ```bash
   npm install -g winglang

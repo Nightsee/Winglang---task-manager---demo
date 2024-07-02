@@ -3,9 +3,11 @@ bring expect;
 bring ex;
 
 
+// ressources
 let website = new cloud.Website(path: "./public");
 let api = new cloud.Api({cors: true});
 let counter = new cloud.Counter();
+
 let db = new ex.Table(
   name: "tasks",
   primaryKey: "id",
@@ -15,6 +17,8 @@ let db = new ex.Table(
 );
 
 //serverless functions
+
+
 let addTask = new cloud.Function(inflight (data) => { 
   if let body = data {
     let taskdata = Json.parse(body);

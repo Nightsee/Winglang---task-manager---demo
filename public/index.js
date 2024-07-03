@@ -5,6 +5,13 @@ let inpt = document.querySelector('input');
 let dataList = document.getElementById('dataList');
 let bdy = document.querySelector('body');
 let listItems = document.querySelectorAll('.listItem');
+let apiUrl = ""
+
+fetch('/config.json')
+            .then(response => response.json())
+            .then(data => {
+                apiUrl = data.api
+            });
 
 window.onload = function () {
     fetchData()
@@ -13,7 +20,7 @@ window.onload = function () {
 btn.addEventListener('click', async ()=>{
     let tasktmp = {task: inpt.value}
     inpt.value=""
-    const response = await fetch(`http://localhost:${PORT}/add`, {
+    const response = await fetch(`${apiUrl}/add`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -33,7 +40,7 @@ function populatePage(data, id) {
     dataList.appendChild(divtmp)
     // event listener for deleting tasks
     divtmp.addEventListener('click', async ()=>{
-        let response = await fetch(`http://localhost:${PORT}/delete/${divtmp.id}`,{
+        let response = await fetch(`${apiUrl}/delete/${divtmp.id}`,{
             method: "DELETE",
             headers: {
               "Content-Type": "application/json",
@@ -44,7 +51,7 @@ function populatePage(data, id) {
 }
 
 async function fetchData() {
-    let data = await fetch(`http://localhost:${PORT}/`).then(res=> res.json());
+    let data = await fetch(`${apiUrl}`).then(res=> res.json());
     if (dataList.hasChildNodes()) {
         while (dataList.firstChild) {
             dataList.removeChild(dataList.firstChild);

@@ -8,6 +8,8 @@ let website = new cloud.Website(path: "./public");
 let api = new cloud.Api({cors: true});
 let counter = new cloud.Counter();
 
+website.addJson("config.json", { api: api.url });
+
 let db = new dynamodb.Table(
   attributes: [
     {

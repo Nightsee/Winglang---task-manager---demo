@@ -16,13 +16,26 @@ This is a simple demo app, where you can add by writting the task and clicking o
 
 
 
-## Run Locally
+## Install winglang
 
-Install winglang if not already and make sur you have docker client running on your machine
+First make sure you have Nodejs installed, if not you can download and install the version corresponding to your operating system
+
+```
+https://nodejs.org/en/download/package-manager
+```
+
+Install winglang globaly
 
 ```bash
-  npm install -g winglang
+  npm install -g winglang@latest
 ```
+
+Install docker on your machine
+```
+https://docs.docker.com/engine/install/
+```
+
+## Run Locally
 
 Clone the project
 
@@ -42,7 +55,7 @@ Install dependencies
   npm install
 ```
 
-Start the server
+Make sure that the docker engine is running then you can deploy localy
 
 ```bash
   wing it

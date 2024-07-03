@@ -29,6 +29,10 @@ Install winglang globaly
 ```bash
   npm install -g winglang@latest
 ```
+or using yarn package manager
+```bash
+  yarn global add winglang
+```
 
 Install docker on your machine
 ```
@@ -53,6 +57,10 @@ Install dependencies
 
 ```bash
   npm install
+```
+or using yarn package manager
+```bash
+  yarn install
 ```
 
 Make sure that the docker engine is running then you can deploy localy
